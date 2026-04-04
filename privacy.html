@@ -12,6 +12,7 @@
     ul { padding-left: 1.4em; }
     a { color: #007AFF; }
     .meta { color: #888; font-size: 0.9em; margin-bottom: 2em; }
+    .highlight { background: #f0f7ff; border-left: 3px solid #007AFF; padding: 12px 16px; border-radius: 4px; margin: 1em 0; }
     footer { margin-top: 3em; font-size: 0.85em; color: #999; border-top: 1px solid #e5e5e5; padding-top: 1em; }
   </style>
 </head>
@@ -20,48 +21,107 @@
 <h1>Privacy Policy</h1>
 <p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: April 4, 2026</p>
 
-<p>FullYear is a read-only calendar overview app for iOS. Your privacy is important. This policy explains what data the app accesses, how it is used, and what is never collected.</p>
+<div class="highlight">
+  <strong>Short version:</strong> All your calendar data stays on your device. We do not collect, store, or share any personal information. FullYear uses Apple's built-in calendar system — your data never leaves your iPhone or iPad.
+</div>
 
-<h2>What FullYear Does</h2>
-<p>FullYear reads your calendar events from Apple's EventKit framework and displays them in a yearly, monthly, or 3-month overview on your device. It does not create, edit, or delete events.</p>
+<h2>1. Who We Are</h2>
+<p>FullYear Calendar is developed and maintained by Miika Kettunen (an individual developer), Finland. Contact: <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a></p>
+<p>For GDPR purposes, Miika Kettunen is the <strong>data controller</strong> for any personal data processed in connection with this app.</p>
 
-<h2>Data We Access</h2>
+<h2>2. What FullYear Does</h2>
+<p>FullYear is a calendar app that lets you view, create, edit, and delete calendar events. It displays your events in a yearly, monthly, or 3-month overview. All calendar operations are performed locally on your device using Apple's EventKit framework.</p>
+
+<h2>3. Data Processing</h2>
+
+<h3>3.1 Calendar Data</h3>
 <ul>
-  <li><strong>Calendar events</strong> — Read-only. Accessed via Apple EventKit with your explicit permission. Event data is processed entirely on your device and is never transmitted to any server.</li>
-  <li><strong>Subscription status</strong> — If you purchase FullYear Pro, RevenueCat processes the transaction and stores an anonymous subscriber ID linked to your App Store account. No personal information (name, email, payment details) is shared with RevenueCat.</li>
-  <li><strong>Widget data</strong> — A summary of your upcoming events is saved locally in an App Group shared between the app and its home screen widget. This data never leaves your device.</li>
+  <li><strong>What:</strong> Your calendar events (titles, dates, times, calendars).</li>
+  <li><strong>How:</strong> Read, created, edited, and deleted via Apple's EventKit framework with your explicit permission.</li>
+  <li><strong>Where:</strong> Entirely on your device. Calendar data is stored in Apple's Calendar database on your iPhone or iPad — not on any server we control.</li>
+  <li><strong>Legal basis (GDPR Art. 6(1)(b)):</strong> Processing is necessary to perform the core function of the app you have chosen to use.</li>
 </ul>
 
-<h2>Data We Do NOT Collect</h2>
+<h3>3.2 Widget Data</h3>
+<ul>
+  <li><strong>What:</strong> A summary of upcoming events used to display your home screen widget.</li>
+  <li><strong>Where:</strong> Saved locally in an App Group shared between the app and the widget. Never leaves your device.</li>
+</ul>
+
+<h3>3.3 Subscription Status</h3>
+<ul>
+  <li><strong>What:</strong> An anonymous subscriber identifier linked to your App Store account (no name, email, or payment details).</li>
+  <li><strong>Who processes it:</strong> RevenueCat, Inc. — a third-party subscription management service.</li>
+  <li><strong>Legal basis (GDPR Art. 6(1)(b)):</strong> Processing is necessary to provide the Pro subscription you purchased.</li>
+  <li><strong>RevenueCat privacy policy:</strong> <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+</ul>
+
+<h2>4. Data We Do NOT Collect</h2>
 <ul>
   <li>No analytics or usage tracking</li>
-  <li>No advertising identifiers</li>
-  <li>No crash reporting services</li>
-  <li>No AI processing of your calendar data</li>
-  <li>No data stored on external servers by us</li>
+  <li>No crash reporting sent to third parties</li>
+  <li>No advertising identifiers or tracking pixels</li>
+  <li>No AI or machine learning processing of your data</li>
+  <li>No data stored on our servers</li>
+  <li>No account creation required</li>
 </ul>
 
-<h2>Third-Party Services</h2>
+<h2>5. Third-Party Services</h2>
+<table style="width:100%;border-collapse:collapse;margin-top:8px">
+  <tr style="background:#f5f5f5">
+    <th style="text-align:left;padding:8px;border:1px solid #e0e0e0">Service</th>
+    <th style="text-align:left;padding:8px;border:1px solid #e0e0e0">Purpose</th>
+    <th style="text-align:left;padding:8px;border:1px solid #e0e0e0">Data shared</th>
+  </tr>
+  <tr>
+    <td style="padding:8px;border:1px solid #e0e0e0">Apple EventKit</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Calendar access</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Processed locally only</td>
+  </tr>
+  <tr>
+    <td style="padding:8px;border:1px solid #e0e0e0">RevenueCat</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Subscription management</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Anonymous subscriber ID</td>
+  </tr>
+</table>
+
+<h2>6. Calendar Permission</h2>
+<p>FullYear requests full calendar access (read and write) to let you view, create, edit, and delete events. You can revoke this permission at any time in <strong>Settings → Privacy &amp; Security → Calendars</strong>. Without calendar access the app cannot display or modify your events.</p>
+
+<h2>7. Data Retention</h2>
+<p>We do not store any of your personal data on our systems, so there is nothing for us to retain or delete. Your calendar data is retained according to your own device and iCloud settings. To delete your calendar data, use Apple's Calendar app or iCloud settings.</p>
+
+<h2>8. Your Rights Under GDPR</h2>
+<p>If you are in the European Economic Area, you have the following rights regarding your personal data:</p>
 <ul>
-  <li><strong>Apple EventKit</strong> — Calendar access framework provided by Apple. Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-  <li><strong>RevenueCat</strong> — Subscription management. Processes anonymous purchase receipts. See <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+  <li><strong>Right of access (Art. 15):</strong> You can request information about what data we process.</li>
+  <li><strong>Right to rectification (Art. 16):</strong> You can correct inaccurate data — in this case, directly through the app or Apple's Calendar.</li>
+  <li><strong>Right to erasure (Art. 17):</strong> You can delete your calendar data directly through the app or Apple's Calendar. For subscription data, contact RevenueCat.</li>
+  <li><strong>Right to restriction (Art. 18):</strong> You can restrict processing by revoking calendar permission in iOS Settings.</li>
+  <li><strong>Right to data portability (Art. 20):</strong> Your calendar data is accessible through Apple's standard export tools.</li>
+  <li><strong>Right to object (Art. 21):</strong> You can object to processing by revoking calendar permission or deleting the app.</li>
+  <li><strong>Right to lodge a complaint:</strong> You have the right to lodge a complaint with your national data protection authority. In Finland: <a href="https://tietosuoja.fi">tietosuoja.fi</a></li>
 </ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a>. We will respond within 30 days.</p>
 
-<h2>Calendar Permission</h2>
-<p>FullYear requests calendar access only to display your events. You can revoke this permission at any time in <strong>Settings → Privacy & Security → Calendars</strong>. Without calendar access the app shows an empty calendar.</p>
+<h2>9. International Transfers</h2>
+<p>Your calendar data is processed exclusively on your device and is not transferred internationally by us. RevenueCat may process subscription data in the United States. RevenueCat participates in applicable data transfer frameworks and maintains appropriate safeguards.</p>
 
-<h2>Children's Privacy</h2>
-<p>FullYear does not knowingly collect any data from children under 13. The app contains no account creation, social features, or data collection that would be of concern for younger users.</p>
+<h2>10. Security</h2>
+<p>All calendar data is processed on-device and protected by iOS's built-in security model (sandboxing, encryption at rest). The App Group used for widget data is protected by iOS app group entitlements and is inaccessible to other apps.</p>
 
-<h2>Your Rights (GDPR)</h2>
-<p>If you are in the European Economic Area, you have the right to access, correct, or delete any personal data we hold. Since FullYear stores no personal data on our servers, there is nothing to request — all calendar data stays on your device under Apple's control.</p>
-<p>For subscription-related data held by RevenueCat, contact them directly at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+<h2>11. Children's Privacy</h2>
+<p>FullYear is not directed at children under 13. We do not knowingly collect personal data from children. The app contains no account creation, social features, or third-party advertising.</p>
 
-<h2>Changes to This Policy</h2>
-<p>If this policy changes materially, the updated date at the top of this page will reflect that. Continued use of the app after changes constitutes acceptance.</p>
+<h2>12. Changes to This Policy</h2>
+<p>If this policy changes materially, the updated date at the top of this page will reflect that. For significant changes we will update the app's App Store description. Continued use of the app after changes constitutes acceptance.</p>
 
-<h2>Contact</h2>
-<p>Questions or concerns about privacy? Reach out at <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a>.</p>
+<h2>13. Contact &amp; Data Controller</h2>
+<p>
+  <strong>Miika Kettunen</strong><br>
+  Finland<br>
+  <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a>
+</p>
 
 <footer>FullYear Calendar &nbsp;·&nbsp; Made by Miika Kettunen &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a></footer>
 
