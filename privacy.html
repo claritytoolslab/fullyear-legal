@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FullYear – Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; background: #ffffff; color: #1a1a1a; line-height: 1.7; }
     h1 { font-size: 2em; margin-bottom: 4px; }
     h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
     p, li { font-size: 1em; color: #333; }
@@ -14,15 +14,30 @@
     .meta { color: #888; font-size: 0.9em; margin-bottom: 2em; }
     .highlight { background: #f0f7ff; border-left: 3px solid #007AFF; padding: 12px 16px; border-radius: 4px; margin: 1em 0; }
     footer { margin-top: 3em; font-size: 0.85em; color: #999; border-top: 1px solid #e5e5e5; padding-top: 1em; }
+    table { border-color: #e0e0e0; }
+    th, td { border-color: #e0e0e0 !important; }
+    tr[style] { background: #f5f5f5 !important; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #e8e8e8; }
+      h2 { border-bottom-color: #3a3a3a; }
+      p, li { color: #d0d0d0; }
+      a { color: #4da3ff; }
+      .meta { color: #9a9a9a; }
+      .highlight { background: #14263a; border-left-color: #4da3ff; }
+      th, td { border-color: #3a3a3a !important; }
+      tr[style] { background: #2a2a2a !important; }
+      footer { color: #8a8a8a; border-top-color: #3a3a3a; }
+    }
   </style>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: May 9, 2026</p>
+<p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: August 31, 2026</p>
 
 <div class="highlight">
-  <strong>Short version:</strong> All your calendar data stays on your device. We do not collect, store, or share any personal information. FullYear uses Apple's built-in calendar system — your data never leaves your devices. If you use iCloud, Apple syncs your calendar data between your devices according to Apple's own privacy policy.
+  <strong>Short version:</strong> All your calendar data stays on your device. FullYear uses Apple's built-in calendar system — your data never leaves your devices. If you use iCloud, Apple syncs your calendar data between your devices according to Apple's own privacy policy. The one exception is the optional <strong>Photo-to-Events</strong> feature: when you choose to use it, text read from your photo (never the photo itself) is sent for AI analysis. See section 3.4.
 </div>
 
 <h2>1. Who We Are</h2>
@@ -56,13 +71,25 @@
   <li><strong>RevenueCat privacy policy:</strong> <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
 </ul>
 
+<h3>3.4 Photo-to-Events (optional AI feature)</h3>
+<p>FullYear Pro includes an optional feature that turns a photo of a schedule, invitation, or flyer into calendar events. This feature runs <strong>only when you actively choose a photo</strong> — it is never triggered in the background.</p>
+<ul>
+  <li><strong>On-device text recognition:</strong> When you select a photo, FullYear reads the text from it <strong>on your device</strong> using Apple's Vision framework. <strong>The photo itself never leaves your device and is never uploaded or stored anywhere.</strong></li>
+  <li><strong>What is sent:</strong> Only the extracted text, together with the current date and your time zone, is sent for analysis so that events can be identified. No image, no name, no email, no account, and no calendar contents other than the text you photographed are sent.</li>
+  <li><strong>Who processes it:</strong> The text is sent over an HTTPS connection to a secure proxy (Supabase Edge Functions), which forwards it to <strong>OpenAI's GPT API</strong> to identify events. The proxy does not store your text; it only relays the request. OpenAI processes the text in real time and does <strong>not</strong> use API-submitted data to train its models. Data is retained by OpenAI only according to its API data-retention policy (typically up to 30 days for abuse monitoring), then deleted.</li>
+  <li><strong>What happens to the result:</strong> The suggested events are shown to you for review. Nothing is saved to your calendar until you confirm. Saved events are stored on your device via Apple's EventKit, exactly like any other event.</li>
+  <li><strong>Legal basis (GDPR Art. 6(1)(b)):</strong> Processing is necessary to provide the photo-to-events feature you chose to use.</li>
+  <li><strong>OpenAI:</strong> <a href="https://openai.com/enterprise-privacy">openai.com/enterprise-privacy</a> &nbsp;·&nbsp; <strong>Supabase:</strong> <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+</ul>
+
 <h2>4. Data We Do NOT Collect</h2>
 <ul>
   <li>No analytics or usage tracking</li>
   <li>No crash reporting sent to third parties</li>
   <li>No advertising identifiers or tracking pixels</li>
-  <li>No AI or machine learning processing of your data</li>
-  <li>No data stored on our servers</li>
+  <li>No AI processing of your calendar unless you choose it — the AI feature runs only on text from a photo you actively pick (see section 3.4), never automatically on your calendar</li>
+  <li>No photos are ever uploaded or stored — text recognition happens on your device</li>
+  <li>No data of yours is stored on our servers</li>
   <li>No account creation required</li>
 </ul>
 
@@ -83,6 +110,16 @@
     <td style="padding:8px;border:1px solid #e0e0e0">Subscription management</td>
     <td style="padding:8px;border:1px solid #e0e0e0">Anonymous subscriber ID</td>
   </tr>
+  <tr>
+    <td style="padding:8px;border:1px solid #e0e0e0">OpenAI</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Photo-to-events AI analysis (only when you use the feature)</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Text read from your photo (never the photo)</td>
+  </tr>
+  <tr>
+    <td style="padding:8px;border:1px solid #e0e0e0">Supabase</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Secure proxy that relays the AI request</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Text in transit only — not stored</td>
+  </tr>
 </table>
 
 <h2>6. Calendar Permission</h2>
@@ -90,6 +127,7 @@
 
 <h2>7. Data Retention</h2>
 <p>We do not store any of your personal data on our systems, so there is nothing for us to retain or delete. Your calendar data is retained according to your own device and iCloud settings. To delete your calendar data, use Apple's Calendar app or iCloud settings.</p>
+<p>Text sent for photo-to-events analysis (section 3.4) is not stored by us or by our proxy. OpenAI may retain it briefly for abuse monitoring (typically up to 30 days) before deleting it, per its API data-retention policy.</p>
 
 <h2>8. Your Rights Under GDPR</h2>
 <p>If you are in the European Economic Area, you have the following rights regarding your personal data:</p>
@@ -105,7 +143,7 @@
 <p>To exercise any of these rights, contact us at <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a>. We will respond within 30 days.</p>
 
 <h2>9. International Transfers</h2>
-<p>Your calendar data is processed exclusively on your device and is not transferred internationally by us. RevenueCat may process subscription data in the United States. RevenueCat participates in applicable data transfer frameworks and maintains appropriate safeguards.</p>
+<p>Your calendar data is processed exclusively on your device and is not transferred internationally by us. RevenueCat may process subscription data in the United States. If you use the optional photo-to-events feature, the text extracted from your photo is processed by OpenAI in the United States. These providers participate in applicable data transfer frameworks and maintain appropriate safeguards.</p>
 
 <h2>10. Security</h2>
 <p>All calendar data is processed on-device and protected by iOS's built-in security model (sandboxing, encryption at rest). The App Group used for widget data is protected by iOS app group entitlements and is inaccessible to other apps.</p>

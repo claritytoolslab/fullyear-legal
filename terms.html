@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FullYear – Terms of Service</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 740px; margin: 40px auto; padding: 0 24px; background: #ffffff; color: #1a1a1a; line-height: 1.7; }
     h1 { font-size: 2em; margin-bottom: 4px; }
     h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
     p, li { font-size: 1em; color: #333; }
@@ -13,17 +13,26 @@
     a { color: #007AFF; }
     .meta { color: #888; font-size: 0.9em; margin-bottom: 2em; }
     footer { margin-top: 3em; font-size: 0.85em; color: #999; border-top: 1px solid #e5e5e5; padding-top: 1em; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #e8e8e8; }
+      h2 { border-bottom-color: #3a3a3a; }
+      p, li { color: #d0d0d0; }
+      a { color: #4da3ff; }
+      .meta { color: #9a9a9a; }
+      footer { color: #8a8a8a; border-top-color: #3a3a3a; }
+    }
   </style>
 </head>
 <body>
 
 <h1>Terms of Service</h1>
-<p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: April 4, 2026</p>
+<p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: August 31, 2026</p>
 
 <p>By downloading or using FullYear, you agree to these Terms of Service. Please read them carefully. If you do not agree, do not use the app.</p>
 
 <h2>1. About the App</h2>
-<p>FullYear Calendar is a calendar app for iOS that lets you view, create, edit, and delete calendar events. It is developed and maintained by Miika Kettunen, Finland.</p>
+<p>FullYear Calendar is a calendar app for iOS that lets you view, create, edit, and delete calendar events. It is developed and maintained by Miika Kettunen, Finland. FullYear Pro also includes an optional AI-assisted feature that turns a photo of a schedule or invitation into calendar events (see section 4).</p>
 
 <h2>2. License</h2>
 <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use FullYear on any Apple device you own or control, subject to these terms and the Apple App Store Terms of Service. You may not:</p>
@@ -36,47 +45,56 @@
 <h2>3. Calendar Access</h2>
 <p>FullYear requests read and write access to your calendars via Apple's EventKit framework. You grant this access voluntarily. You can revoke it at any time in iOS Settings → Privacy &amp; Security → Calendars. You are solely responsible for any calendar events you create, edit, or delete using the app.</p>
 
-<h2>4. FullYear Pro — Subscriptions &amp; Purchases</h2>
+<h2>4. Photo-to-Events &amp; AI Features</h2>
+<p>FullYear Pro includes an optional feature that turns a photo you choose (such as a schedule, invitation, or flyer) into suggested calendar events. This feature runs only when you actively select a photo.</p>
+<ul>
+  <li><strong>How it works:</strong> Text is read from your photo <strong>on your device</strong> using Apple's Vision framework. Only that text — never the photo — is then sent, via a secure proxy, to OpenAI's GPT API to identify events. Details are in our <a href="privacy.html">Privacy Policy</a>, section 3.4.</li>
+  <li><strong>Third-party AI service:</strong> By using this feature you acknowledge that the extracted text is processed by OpenAI, and you agree to comply with <a href="https://openai.com/policies/usage-policies">OpenAI's Usage Policies</a>. You must not use the feature to process unlawful content or content you do not have the right to submit.</li>
+  <li><strong>Accuracy — please read:</strong> Events and details suggested by the AI are generated automatically and <strong>may be inaccurate, incomplete, or wrong</strong>. Nothing is added to your calendar until you review and confirm it. <strong>You are responsible for checking every date, time, and detail before saving.</strong> We are not liable for missed events, incorrect entries, or any consequence of relying on AI-generated suggestions.</li>
+  <li><strong>Availability:</strong> This feature depends on an internet connection and on the availability of the third-party AI service, which may change or be interrupted.</li>
+</ul>
 
-<h3>4.1 Plans</h3>
+<h2>5. FullYear Pro — Subscriptions &amp; Purchases</h2>
+
+<h3>5.1 Plans</h3>
 <ul>
   <li><strong>Monthly (€0,99/month):</strong> Renews automatically each month unless cancelled at least 24 hours before the renewal date.</li>
   <li><strong>Annual (€6,99/year):</strong> Includes a 7-day free trial. Renews automatically each year unless cancelled at least 24 hours before renewal. Cancellation during the trial results in no charge.</li>
   <li><strong>Lifetime (€14,99 one-time):</strong> A single payment granting permanent access to all Pro features available at the time of purchase and future Pro features.</li>
 </ul>
 
-<h3>4.2 Billing &amp; Cancellation</h3>
+<h3>5.2 Billing &amp; Cancellation</h3>
 <p>Payment is charged to your Apple ID account at purchase confirmation. Subscriptions are managed through your Apple ID. To cancel a subscription, go to <strong>Settings → [your name] → Subscriptions</strong> on your iPhone or iPad. Cancellation takes effect at the end of the current billing period — you retain access until then.</p>
 
-<h3>4.3 Refunds</h3>
+<h3>5.3 Refunds</h3>
 <p>Refunds are handled by Apple in accordance with their standard refund policy. We have no ability to issue refunds directly. To request a refund, visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
-<h3>4.4 Price Changes</h3>
+<h3>5.4 Price Changes</h3>
 <p>We may change subscription prices. If we do, we will notify you in advance and you will have the option to cancel before the new price takes effect.</p>
 
-<h2>5. Free Features</h2>
+<h2>6. Free Features</h2>
 <p>The core calendar overview (month, 3-month, and year views) and basic event management are available without a Pro subscription. Pro features such as additional widget sizes and color themes require an active subscription or lifetime purchase.</p>
 
-<h2>6. User Content &amp; Responsibility</h2>
+<h2>7. User Content &amp; Responsibility</h2>
 <p>You are solely responsible for the calendar events you create, modify, or delete using FullYear. We are not responsible for any data loss resulting from the use of the app, device failure, or iOS system behavior. We strongly recommend keeping your calendar data backed up via iCloud or another service.</p>
 
-<h2>7. Disclaimer of Warranties</h2>
+<h2>8. Disclaimer of Warranties</h2>
 <p>FullYear is provided "as is" and "as available" without warranties of any kind, express or implied. We do not warrant that the app will be error-free, uninterrupted, or that calendar data will always be displayed or saved accurately. Calendar data accuracy and reliability depend on Apple's EventKit framework and your connected calendar accounts (iCloud, Google, Exchange, etc.).</p>
 
-<h2>8. Limitation of Liability</h2>
+<h2>9. Limitation of Liability</h2>
 <p>To the maximum extent permitted by applicable law, Miika Kettunen shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, arising from your use of or inability to use FullYear. Our total liability for any claim arising from these terms or the app shall not exceed the amount you paid for the app in the twelve months preceding the claim.</p>
 
-<h2>9. EU Consumer Rights</h2>
+<h2>10. EU Consumer Rights</h2>
 <p>If you are a consumer in the European Union, you may have statutory rights that cannot be excluded by these terms, including rights under the EU Consumer Rights Directive. Nothing in these terms affects those statutory rights.</p>
 <p>Under EU law, you have a 14-day right of withdrawal for digital content purchased online. However, by starting to use FullYear Pro immediately after purchase, you expressly request that the service begins before the withdrawal period expires and acknowledge that you lose your right of withdrawal once the service has fully commenced.</p>
 
-<h2>10. Governing Law &amp; Disputes</h2>
+<h2>11. Governing Law &amp; Disputes</h2>
 <p>These terms are governed by the laws of Finland. Any disputes shall be subject to the exclusive jurisdiction of the courts of Finland, without prejudice to your rights as a consumer under applicable EU law to bring proceedings in your country of residence.</p>
 
-<h2>11. Changes to These Terms</h2>
+<h2>12. Changes to These Terms</h2>
 <p>We may update these terms from time to time. The updated date at the top of this page will reflect any changes. For material changes we will provide notice through the App Store or within the app. Continued use of FullYear after changes constitutes acceptance of the updated terms.</p>
 
-<h2>12. Contact</h2>
+<h2>13. Contact</h2>
 <p>
   <strong>Miika Kettunen</strong><br>
   Finland<br>
