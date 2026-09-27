@@ -37,7 +37,7 @@
 <p class="meta">FullYear Calendar &nbsp;·&nbsp; Last updated: September 27, 2026</p>
 
 <div class="highlight">
-  <strong>Short version:</strong> All your calendar data stays on your device. FullYear uses Apple's built-in calendar system — your data never leaves your devices. If you use iCloud, Apple syncs your calendar data between your devices according to Apple's own privacy policy. The one exception is the optional <strong>Photo-to-Events</strong> feature: when you choose to use it, text read from your photo (never the photo itself) is sent for AI analysis. See section 3.4.
+  <strong>Short version:</strong> All your calendar data stays on your device. FullYear uses Apple's built-in calendar system — your data never leaves your devices. If you use iCloud, Apple syncs your calendar data between your devices according to Apple's own privacy policy. The one exception is the optional <strong>Photo-to-Events</strong> feature: when you choose to use it, text read from your photo (never the photo itself) is sent for AI analysis. See section 3.4. The app also includes Meta's (Facebook) SDK, which records app events such as installs and purchases to measure advertising campaigns. See section 3.5. FullYear does not display ads.
 </div>
 
 <h2>1. Who We Are</h2>
@@ -82,11 +82,20 @@
   <li><strong>OpenAI:</strong> <a href="https://openai.com/enterprise-privacy">openai.com/enterprise-privacy</a> &nbsp;·&nbsp; <strong>Supabase:</strong> <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
 </ul>
 
+<h3>3.5 Advertising Measurement (Meta SDK)</h3>
+<p>FullYear does not show any advertising inside the app. It includes the Meta (Facebook) SDK so that we can measure the effectiveness of advertising campaigns we may run on Meta's platforms (Facebook, Instagram), for example whether an ad led to an installation or a purchase.</p>
+<ul>
+  <li><strong>What:</strong> App events (such as app installation, app launch, and in-app purchase), a device identifier (the identifier for vendor; the advertising identifier only if you allow tracking in iOS), and basic technical information such as device model, OS version, and app version. Your calendar data, photos, and the text you analyze are <strong>never</strong> sent to Meta.</li>
+  <li><strong>Who processes it:</strong> Meta Platforms Ireland Ltd. (for users in the EEA) and Meta Platforms, Inc.</li>
+  <li><strong>Legal basis (GDPR Art. 6(1)(f)):</strong> Our legitimate interest in measuring and improving the effectiveness of our marketing.</li>
+  <li><strong>Your choices:</strong> You can limit this processing by turning off <strong>Allow Apps to Request to Track</strong> in <strong>Settings → Privacy &amp; Security → Tracking</strong>, and by adjusting your ad preferences in your Meta account. You can also contact us to object to this processing.</li>
+  <li><strong>Meta privacy policy:</strong> <a href="https://www.facebook.com/privacy/policy/">facebook.com/privacy/policy</a></li>
+</ul>
+
 <h2>4. Data We Do NOT Collect</h2>
 <ul>
-  <li>No analytics or usage tracking</li>
   <li>No crash reporting sent to third parties</li>
-  <li>No advertising identifiers or tracking pixels</li>
+  <li>No ads displayed in the app</li>
   <li>No AI processing of your calendar unless you choose it — the AI feature runs only on text from a photo you actively pick (see section 3.4), never automatically on your calendar</li>
   <li>No photos are ever uploaded or stored — text recognition happens on your device</li>
   <li>No data of yours is stored on our servers</li>
@@ -120,6 +129,11 @@
     <td style="padding:8px;border:1px solid #e0e0e0">Secure proxy that relays the AI request</td>
     <td style="padding:8px;border:1px solid #e0e0e0">Text in transit only — not stored</td>
   </tr>
+  <tr>
+    <td style="padding:8px;border:1px solid #e0e0e0">Meta (Facebook SDK)</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">Advertising measurement (see section 3.5)</td>
+    <td style="padding:8px;border:1px solid #e0e0e0">App events, device identifier, device and app information</td>
+  </tr>
 </table>
 
 <h2>6. Calendar Permission</h2>
@@ -128,6 +142,7 @@
 <h2>7. Data Retention</h2>
 <p>We do not store any of your personal data on our systems, so there is nothing for us to retain or delete. Your calendar data is retained according to your own device and iCloud settings. To delete your calendar data, use Apple's Calendar app or iCloud settings.</p>
 <p>Text sent for photo-to-events analysis (section 3.4) is not stored by us or by our proxy. OpenAI may retain it briefly for abuse monitoring (typically up to 30 days) before deleting it, per its API data-retention policy.</p>
+<p>App event data sent to Meta (section 3.5) is retained by Meta according to its own data policy.</p>
 
 <h2>8. Your Rights Under GDPR</h2>
 <p>If you are in the European Economic Area, you have the following rights regarding your personal data:</p>
@@ -143,14 +158,14 @@
 <p>To exercise any of these rights, contact us at <a href="mailto:keminonele@icloud.com">keminonele@icloud.com</a>. We will respond within 30 days.</p>
 
 <h2>9. International Transfers</h2>
-<p>Your calendar data is processed exclusively on your device and is not transferred internationally by us. RevenueCat may process subscription data in the United States. If you use the optional photo-to-events feature, the text extracted from your photo is relayed by Supabase and processed by OpenAI, primarily in the United States.</p>
-<p>These transfers outside the European Economic Area (EEA) are protected by the EU Standard Contractual Clauses (SCCs) included in each provider's Data Processing Addendum, and, where applicable, by the provider's certification under the EU-U.S. Data Privacy Framework: <a href="https://openai.com/policies/data-processing-addendum">OpenAI DPA</a> &nbsp;·&nbsp; <a href="https://supabase.com/legal/dpa">Supabase DPA</a> &nbsp;·&nbsp; <a href="https://www.revenuecat.com/dpa">RevenueCat DPA</a>.</p>
+<p>Your calendar data is processed exclusively on your device and is not transferred internationally by us. RevenueCat may process subscription data in the United States. If you use the optional photo-to-events feature, the text extracted from your photo is relayed by Supabase and processed by OpenAI, primarily in the United States. App event data collected by the Meta SDK may be transferred by Meta to the United States.</p>
+<p>These transfers outside the European Economic Area (EEA) are protected by the EU Standard Contractual Clauses (SCCs) included in each provider's Data Processing Addendum, and, where applicable, by the provider's certification under the EU-U.S. Data Privacy Framework: <a href="https://openai.com/policies/data-processing-addendum">OpenAI DPA</a> &nbsp;·&nbsp; <a href="https://supabase.com/legal/dpa">Supabase DPA</a> &nbsp;·&nbsp; <a href="https://www.revenuecat.com/dpa">RevenueCat DPA</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/legal/EU_data_transfer_addendum">Meta data transfer terms</a>.</p>
 
 <h2>10. Security</h2>
 <p>All calendar data is processed on-device and protected by iOS's built-in security model (sandboxing, encryption at rest). The App Group used for widget data is protected by iOS app group entitlements and is inaccessible to other apps.</p>
 
 <h2>11. Children's Privacy</h2>
-<p>FullYear is not directed at children under 13. We do not knowingly collect personal data from children. The app contains no account creation, social features, or third-party advertising.</p>
+<p>FullYear is not directed at children under 13. We do not knowingly collect personal data from children. The app contains no account creation or social features and does not display advertising.</p>
 
 <h2>12. Changes to This Policy</h2>
 <p>If this policy changes materially, the updated date at the top of this page will reflect that. For significant changes we will update the app's App Store description. Continued use of the app after changes constitutes acceptance.</p>
